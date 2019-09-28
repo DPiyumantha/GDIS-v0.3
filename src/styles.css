@@ -31,6 +31,15 @@ body {
     padding: 10%;
 }
 
+.home-top-right {
+    padding: 10%;
+}
+
+.weather {
+    font-size: 5em;
+    color: darkgray;
+}
+
 
 /* main page bottom buttons */
 
@@ -49,11 +58,13 @@ body {
 }
 
 .btnimg {
-    max-width: 50%;
-    height: auto;
-    width: 50%;
+    /* max-width: 50%; */
+    /* height: auto; */
+    /* width: 50%; */
     vertical-align: centre;
     margin-top: 10%;
+    max-height: 52%;
+    width: auto;
 }
 
 .btnh {
@@ -78,12 +89,15 @@ body {
 }
 
 .navpagebtn:hover {
-    transition-duration: 400ms;
+    transition-duration: 600ms;
     /* border: 3px solid grey; */
     filter: opacity(0.8);
-    filter: brightness(1.5);
+    /* filter: brightness(1.5); */
     /* filter: drop-shadow(30px 10px 4px #4444dd); */
-    filter: drop-shadow(0 -6mm 4mm rgba(15, 14, 0, 0));
+    /* filter: drop-shadow(0 -6mm 4mm rgba(15, 14, 0, 0)); */
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0px -15px 15px white;
+    /* border-top: 2px solid grey; */
 }
 
 .btn-div {
@@ -101,7 +115,7 @@ body {
     clear: both;
     padding: 0px;
     margin: 0px;
-    height: 50vh;
+    height: 40vh;
 }
 
 

@@ -8,10 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeTopComponent implements OnInit {
   switchCom: boolean = false;
   constructor() {
-    setInterval(()=>{
-      this.switchCom=!this.switchCom;
-      console.log(this.switchCom);
-    },5000);
+    
     
   }
    

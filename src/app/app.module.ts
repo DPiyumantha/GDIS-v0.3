@@ -13,6 +13,7 @@ import { AttendanceComponent } from './attendance/attendance.component';
 import { TourComponent } from './tour/tour.component';
 import { TimetableComponent } from './timetable/timetable.component';
 import { LecturersComponent } from './lecturers/lecturers.component';
+import { NoticeBoardComponent } from './notice-board/notice-board.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LecturersComponent } from './lecturers/lecturers.component';
     AttendanceComponent,
     TourComponent,
     TimetableComponent,
-    LecturersComponent
+    LecturersComponent,
+    NoticeBoardComponent
   ],
   imports: [
     BrowserModule,
