@@ -1,1 +1,175 @@
 /* You can add global styles to this file, and also import other style files */
+
+.clear {
+    margin: 0;
+    padding: 0;
+}
+
+.h-50 {
+    height: 50%;
+    max-height: 50%;
+    min-height: 50%;
+    /* position: absolute; */
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.inside-row {
+    height: 100%;
+    text-align: center;
+}
+
+.home-top-left {
+    text-align: left;
+    padding: 10%;
+}
+
+
+/* main page bottom buttons */
+
+.btndiv {
+    /* text-align: center;
+    padding: auto; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.btnimg {
+    max-width: 50%;
+    height: auto;
+    width: 50%;
+    vertical-align: centre;
+    margin-top: 10%;
+}
+
+.btnh {
+    font-size: 2vw;
+    color: white;
+    padding-top: 5%;
+}
+
+
+/* .......... */
+
+.navpagebar {
+    height: 10vh;
+}
+
+.navpagebtn {
+    height: 100%;
+    transition-delay: 3ms;
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+}
+
+.navpagebtn:hover {
+    transition-duration: 400ms;
+    /* border: 3px solid grey; */
+    filter: opacity(0.8);
+    filter: brightness(1.5);
+    /* filter: drop-shadow(30px 10px 4px #4444dd); */
+    filter: drop-shadow(0 -6mm 4mm rgba(15, 14, 0, 0));
+}
+
+.btn-div {
+    user-select: none;
+    cursor: pointer;
+}
+
+
+/* rsponsive grid system */
+
+
+/*  SECTIONS  */
+
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+    height: 50vh;
+}
+
+
+/*  COLUMN SETUP  */
+
+.col {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.col:first-child {
+    margin-left: 0;
+}
+
+
+/*  GROUPING  */
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+    /* For IE 6/7 */
+}
+
+
+/*  GRID OF FOUR  */
+
+.span_4_of_4 {
+    width: 100%;
+}
+
+.span_3_of_4 {
+    width: 75%;
+}
+
+.span_2_of_4 {
+    width: 50%;
+}
+
+.span_1_of_4 {
+    width: 25%;
+}
+
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .col {
+        margin: 0;
+    }
+    .span_1_of_4,
+    .span_2_of_4,
+    .span_3_of_4,
+    .span_4_of_4 {
+        width: 100%;
+    }
+}
+
+
+/* ........... */

@@ -1,0 +1,43 @@
+<div style="height: 90vh; background:cornsilk">
+    <router-outlet></router-outlet>
+
+    <!-- <ng-container *ngIf="comIndex==1">
+        <app-tour></app-tour>
+    </ng-container>
+    <ng-container *ngIf="comIndex==2">
+        <app-attendance></app-attendance>
+    </ng-container>
+    <ng-container *ngIf="comIndex==3">
+        <app-lecturers></app-lecturers>
+    </ng-container>
+    <ng-container *ngIf="comIndex==4">
+        <app-timetable></app-timetable>
+    </ng-container> -->
+</div>
+
+<div class="section group navpagebar">
+    <div class="col span_1_of_4  " routerLink="/nav/tour">
+        <div class="navpagebtn" style="background: #ffcc00; ">
+            <h3 class="btnh">Virtual Tour</h3>
+
+        </div>
+    </div>
+    <div class="col span_1_of_4" routerLink="/nav/attendance">
+        <div class="navpagebtn " style="background: #ff3300">
+
+            <h3 class="btnh">Attendance</h3>
+        </div>
+    </div>
+    <div class="col span_1_of_4" routerLink="/nav/lecturers">
+        <div class="navpagebtn" style="background: #3366ff">
+
+            <h3 class="btnh">Lecturers</h3>
+        </div>
+    </div>
+    <div class="col span_1_of_4" routerLink="/nav/timetable">
+        <div class="navpagebtn" style="background: #6200cc">
+
+            <h3 class="btnh">Time Table</h3>
+        </div>
+    </div>
+</div>
