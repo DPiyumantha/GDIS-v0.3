@@ -1,0 +1,73 @@
+{
+    "lecturers": [{
+            "id": "",
+            "name": "Prof. A. R. Kumarasinghe",
+            "qualifications": "B.Sc., M.Phil.(Ruhuna) , Ph.D.(Manchester)",
+            "position": " Professor and Chair,  Head of the Department",
+            "img": "http://science.sjp.ac.lk/phy/wp-content/uploads/sites/17/2015/08/ARKumarasinghe1.jpg"
+        },
+        {
+            "id": "",
+            "name": "Prof. (Mrs.) C. P. Abayaratne",
+            "qualifications": "B.Sc.(USJP) , M.Sc.(Bowling Green) , Ph.D.(Toledo)",
+            "position": "Professor",
+            "img": "http://science.sjp.ac.lk/phy/wp-content/uploads/sites/17/2015/08/Untitled-12.jpg"
+        },
+        {
+            "id": "",
+            "name": "Dr. W. D. A. T. Wijeratne",
+            "qualifications": "B.Sc.(Col.) , Ph.D.(Wayne State)",
+            "position": "Senior Lecturer",
+            "img": "http://science.sjp.ac.lk/phy/wp-content/uploads/sites/17/2015/08/Untitled-14.jpg"
+        },
+        {
+            "id": "",
+            "name": "Dr. C. L. Ranatunga",
+            "qualifications": "B.Sc. , M.Phil.(USJP) , Ph.D.(Col.)",
+            "position": "Senior Lecturer",
+            "img": "http://science.sjp.ac.lk/phy/wp-content/uploads/sites/17/2015/08/Untitled-15.jpg"
+        },
+        {
+            "id": "",
+            "name": "Dr. P . Geekiyanage",
+            "qualifications": "B.Sc. , M.Phil. , Ph.D.(USJP)",
+            "position": "Senior Lecturer",
+            "img": "http://science.sjp.ac.lk/phy/wp-content/uploads/sites/17/2015/08/Untitled-1.jpg"
+        },
+        {
+            "id": "",
+            "name": "Prof. A. R. Kumarasinghe",
+            "qualifications": "B.Sc., M.Phil.(Ruhuna) , Ph.D.(Manchester)",
+            "position": " Professor and Chair,  Head of the Department",
+            "img": "http://science.sjp.ac.lk/phy/wp-content/uploads/sites/17/2015/08/ARKumarasinghe1.jpg"
+        },
+        {
+            "id": "",
+            "name": "Prof. (Mrs.) C. P. Abayaratne",
+            "qualifications": "B.Sc.(USJP) , M.Sc.(Bowling Green) , Ph.D.(Toledo)",
+            "position": "Professor",
+            "img": "http://science.sjp.ac.lk/phy/wp-content/uploads/sites/17/2015/08/Untitled-12.jpg"
+        },
+        {
+            "id": "",
+            "name": "Dr. W. D. A. T. Wijeratne",
+            "qualifications": "B.Sc.(Col.) , Ph.D.(Wayne State)",
+            "position": "Senior Lecturer",
+            "img": "http://science.sjp.ac.lk/phy/wp-content/uploads/sites/17/2015/08/Untitled-14.jpg"
+        },
+        {
+            "id": "",
+            "name": "Dr. C. L. Ranatunga",
+            "qualifications": "B.Sc. , M.Phil.(USJP) , Ph.D.(Col.)",
+            "position": "Senior Lecturer",
+            "img": "http://science.sjp.ac.lk/phy/wp-content/uploads/sites/17/2015/08/Untitled-15.jpg"
+        },
+        {
+            "id": "",
+            "name": "Dr. P . Geekiyanage",
+            "qualifications": "B.Sc. , M.Phil. , Ph.D.(USJP)",
+            "position": "Senior Lecturer",
+            "img": "http://science.sjp.ac.lk/phy/wp-content/uploads/sites/17/2015/08/Untitled-1.jpg"
+        }
+    ]
+}

@@ -14,6 +14,7 @@ import { TourComponent } from './tour/tour.component';
 import { TimetableComponent } from './timetable/timetable.component';
 import { LecturersComponent } from './lecturers/lecturers.component';
 import { NoticeBoardComponent } from './notice-board/notice-board.component';
+import { ThirdSlideComponent } from './third-slide/third-slide.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { NoticeBoardComponent } from './notice-board/notice-board.component';
     TourComponent,
     TimetableComponent,
     LecturersComponent,
-    NoticeBoardComponent
+    NoticeBoardComponent,
+    ThirdSlideComponent
   ],
   imports: [
     BrowserModule,

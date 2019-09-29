@@ -1,1 +1,48 @@
-<p>lecturers works!</p>
+<div style="height: 90vh; overflow: auto; overflow-y: hidden">
+    <div class="container" style="height: 100%; padding: 0% 2%; margin: 1%">
+
+        <!-- <div class="row">
+            <div class="col" *ngFor="let lec of lecturerList">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{ lec.img }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <table style="margin-top: 5%">
+            <tr>
+                <td *ngFor="let lec of lecturerList">
+                    <div class=" card text-white bg-primary mb-3" style="width: 10rem; height: 30rem; max-height: 30rem; min-height: 30rem;;">
+                        <img src="{{ lec.img }} " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h6 class="card-title ">{{ lec.name }}</h6>
+                            <p class="card-text ">{{ lec.qualifications }}</p>
+                        </div>
+                        <ul class="list-group list-group-flush text-white bg-primary mb-3">
+                            <li class="list-group-item text-white bg-primary mb-3">{{ lec.position }}</li>
+                            <!-- <li class="list-group-item text-white bg-dark mb-3">Dapibus ac facilisis in</li>
+                            <li class="list-group-item text-white bg-dark mb-3">Vestibulum at eros</li> -->
+                        </ul>
+                        <!-- <div class="card-body ">
+                            <a href="# " class="card-link ">Card link</a>
+                            <a href="# " class="card-link ">Another link</a>
+                        </div> -->
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
