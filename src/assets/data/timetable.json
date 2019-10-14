@@ -1,0 +1,257 @@
+{
+    "timetable": [{
+            "time": "Time",
+            "slots": [{
+                    "fromTo": "8.00am - 8.50am"
+                },
+                {
+                    "fromTo": "8.55am - 9.45am"
+                },
+                {
+                    "fromTo": "9.45am - 10.15am"
+                },
+                {
+                    "fromTo": "10.15am - 11.05am"
+                },
+                {
+                    "fromTo": "11.10am - 12.00pm"
+                },
+                {
+                    "fromTo": "12.00pm - 1.00pm"
+                },
+                {
+                    "fromTo": "1.00pm - 2.00pm"
+                },
+                {
+                    "fromTo": "2.00pm - 3.00pm"
+                },
+                {
+                    "fromTo": "3.00pm - 4.00pm"
+                },
+                {
+                    "fromTo": "4.00pm - 5.00pm"
+                }
+            ]
+        },
+        {
+            "day": "Monday",
+            "courses": [{
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "day": "Tuesday",
+            "courses": [{
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "day": "Wednesday",
+            "courses": [{
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "day": "Thursday",
+            "courses": [{
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "day": "Friday",
+            "courses": [{
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                },
+                {
+                    "name": "",
+                    "lecturer": "",
+                    "code": ""
+                }
+            ]
+        }
+    ]
+}

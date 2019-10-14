@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import data from '../../assets/data/lecturers.json'
+import { AngularFireDatabase } from 'angularfire2/database';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-lecturers',
@@ -7,11 +9,21 @@ import data from '../../assets/data/lecturers.json'
   styleUrls: ['./lecturers.component.css']
 })
 export class LecturersComponent implements OnInit {
-  lecturerList: any[] = data.lecturers ;
-  constructor() { }
+lecList: any[];
+  constructor(db:AngularFireDatabase) {
+     db.list('/lecturers').valueChanges().subscribe(lecList=>{
+       this.lecList=lecList;
+       console.log(this.lecList[1].name);
+     });
+   }
 
   ngOnInit() {
-    console.log(this.lecturerList);
+    
   }
 
+}
+export class Lecturer{
+  name: string;
+  position:string;
+  qualifications: string;
 }

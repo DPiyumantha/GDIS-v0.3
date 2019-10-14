@@ -15,6 +15,9 @@ import { TimetableComponent } from './timetable/timetable.component';
 import { LecturersComponent } from './lecturers/lecturers.component';
 import { NoticeBoardComponent } from './notice-board/notice-board.component';
 import { ThirdSlideComponent } from './third-slide/third-slide.component';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { ThirdSlideComponent } from './third-slide/third-slide.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
