@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import data from '../../assets/data/lecturers.json'
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Observable } from 'rxjs';
+import { LecturerServiceService } from '../shared/lecturer-service.service.js';
+import { Lecturer } from '../shared/lecturer.model.js';
 
 @Component({
   selector: 'app-lecturers',
@@ -9,21 +11,20 @@ import { Observable } from 'rxjs';
   styleUrls: ['./lecturers.component.css']
 })
 export class LecturersComponent implements OnInit {
-lecList: any[];
-  constructor(db:AngularFireDatabase) {
-     db.list('/lecturers').valueChanges().subscribe(lecList=>{
-       this.lecList=lecList;
-       console.log(this.lecList[1].name);
-     });
+lecList: Lecturer[];
+  constructor(private service: LecturerServiceService) {
+     
    }
 
   ngOnInit() {
-    
+    this.service.getLecturers().subscribe(actionArray=>{
+      this.lecList = actionArray.map(item=>{
+        return {
+          id: item.payload.doc.id,
+          ...item.payload.doc.data()} as Lecturer
+      })
+    });
   }
 
 }
-export class Lecturer{
-  name: string;
-  position:string;
-  qualifications: string;
-}
+

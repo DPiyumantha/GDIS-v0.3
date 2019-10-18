@@ -18,6 +18,8 @@ import { ThirdSlideComponent } from './third-slide/third-slide.component';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from 'src/environments/environment';
+import { LecturerServiceService } from './shared/lecturer-service.service';
+import { AngularFirestoreModule } from '@angular/fire/firestore'
 
 @NgModule({
   declarations: [
@@ -39,10 +41,11 @@ import { environment } from 'src/environments/environment';
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    AngularFirestoreModule
   
   ],
-  providers: [],
+  providers: [ LecturerServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

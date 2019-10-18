@@ -1,6 +1,6 @@
 <div class="container-fluid" style="height: 90vh; overflow: auto;">
     <!-- ......  -->
-    <h2><br>Lecturers <br> </h2>
+    <h2>Lecturers <br> </h2>
     <div class="row">
 
         <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let lec of lecList">
@@ -9,8 +9,8 @@
                     <div class="frontside" style="height: 100%; width:100%;">
                         <div class="card">
                             <div class="card-body text-center">
-                                <p><img class=" img-fluid" [src]="lec.img" alt="card image"></p>
-                                <h4 class="card-title" [innerHTML]="lec.name"></h4>
+                                <p><img class=" img-fluid" [src]="lec.imgurl" alt="card image"></p>
+                                <h4 class="card-title">{{ lec.salutation }} {{ lec.fullName }} </h4>
                                 <p class="card-text" [innerHTML]="lec.position"></p>
                                 <!-- <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a> -->
                             </div>
@@ -19,7 +19,7 @@
                     <div class="backside" style="height: 100%; width:100%;">
                         <div class="card">
                             <div class="card-body text-center mt-4 ">
-                                <h4 class="card-title" [innerHTML]="lec.name"></h4>
+                                <h4 class="card-title" [innerHTML]="lec.fullName"></h4>
                                 <p class="card-text" [innerHTML]="lec.qualifications"></p>
                                 <button class="btn btn-primary">Learn more.. </button>
                             </div>
