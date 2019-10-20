@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NoticeService } from '../shared/notice.service';
+import { Notice } from '../shared/notice.model';
 
 @Component({
   selector: 'app-notice-board',
@@ -6,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./notice-board.component.css']
 })
 export class NoticeBoardComponent implements OnInit {
-  notice: string = 'Progress Meeting Of Third Year Physics Group Project will be held on 25th December, 2019 at 8.30am';
-  constructor() { }
+  list: Notice[];
+  constructor(private service: NoticeService) { }
 
   ngOnInit() {
+    this.service.getNotices().subscribe(res=>{
+      this.list = res.map(item=>{
+        return {
+          id: item.payload.doc.id,
+          ...item.payload.doc.data()
+      } as Notice
+    })
+    });
   }
 
 }

@@ -3,7 +3,9 @@
         <div class="col">
             <div style="padding:5%">
 
-                <p style="font-size: 1em">{{ notice }}</p>
+                <ul>
+                    <li *ngFor="let i of list"> {{ i.message }} </li>
+                </ul>
             </div>
         </div>
         <div class="col" style="max-width: 10%; height: 100%; vertical-align: middle">
