@@ -1,4 +1,4 @@
 export class Notice {
-    id:string;
+    // id:string;
     message:string;
 }

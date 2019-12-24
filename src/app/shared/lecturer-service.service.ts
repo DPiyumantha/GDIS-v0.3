@@ -15,6 +15,6 @@ export class LecturerServiceService {
   }
 
   getLecturers(){
-    return this.firestore.collection('lecturers').snapshotChanges();
+    return this.firestore.collection('lecturers',ref=>ref.orderBy('order')).snapshotChanges();
   }
 }

@@ -5,4 +5,5 @@ export class Lecturer{
     qualifications: string;
     emailA: string;
     imgurl: string;
+    order : number;
 }

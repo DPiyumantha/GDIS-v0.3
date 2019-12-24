@@ -11,7 +11,7 @@ import { Lecturer } from '../shared/lecturer.model.js';
   styleUrls: ['./lecturers.component.css']
 })
 export class LecturersComponent implements OnInit {
-lecList: Lecturer[];
+  lecList: Lecturer[];
   constructor(private service: LecturerServiceService) {
      
    }
@@ -21,9 +21,12 @@ lecList: Lecturer[];
       this.lecList = actionArray.map(item=>{
         return {
           id: item.payload.doc.id,
-          ...item.payload.doc.data()} as Lecturer
+          ...item.payload.doc.data() } as Lecturer
       })
+      console.log(this.lecList);
     });
+    console.log(this.lecList);
+       
   }
 
 }

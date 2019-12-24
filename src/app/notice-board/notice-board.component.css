@@ -1,0 +1,19 @@
+.rcorners2 {
+    border-radius: 25px;
+    border: 2px solid #BB543E;
+    padding: 20px;
+    /* width: 200px;
+    height: 150px; */
+}
+
+#noticecontainer {
+    padding: 1%;
+}
+
+.inline {
+    float: left;
+}
+
+.clearBoth {
+    clear: both;
+}
