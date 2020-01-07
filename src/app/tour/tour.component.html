@@ -1,25 +1,41 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <a class="navbar-brand" href="#">GDIS v0.3</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <span class="navbar-toggler-icon"></span>
+  </button>
     <div class="collapse navbar-collapse" id="navbarText">
 
         <span class="navbar-text ml-auto text-right" style="align-self: right; float:right; margin: auto">
-        Virtual Tour
-      </span>
+      Virtual Tour
+    </span>
     </div>
 </nav>
 
-<div class="container-fluid" style="overflow: auto;">
-    <div *ngFor="let v of list" style="padding-top: 5%;">
-        <video width="30%" controls style="padding: 2%;">
-          <source [src]=  v.vdourl    >
-        Your browser does not support HTML5 video.
+<div class="container-fluid" style="overflow: auto; background: #ffcc00; height: 100vh;
+overflow: auto;">
+    <div *ngFor="let v of list" style="padding: 2%;">
 
-        
-          </video>
-        <p> {{ v.title }} </p>
+
+        <div class="col" style="text-align: center;">
+            <div class="row" style="display: inline-block; width: 100%;">
+                <video width="30%" controls style="padding: 2%;">
+          <source [src]=v.vdourl>
+          Your browser does not support HTML5 video.
+
+
+        </video>
+            </div>
+            <div class="row" style="padding: 2% 2% 0% 2%; display: inline-block;">
+                <h6> {{ v.title }} </h6>
+            </div>
+        </div>
+
+
+        <!-- ///// -->
+
+        <!-- //// -->
+
+
 
 
 
