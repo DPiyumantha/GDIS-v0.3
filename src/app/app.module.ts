@@ -21,6 +21,8 @@ import { environment } from 'src/environments/environment';
 import { LecturerServiceService } from './shared/lecturer-service.service';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { GoogleChartsModule } from 'angular-google-charts';
+import { AttendanceService } from './shared/attendance.service';
+import { AttendanceListComponent } from './attendance/attendance-list/attendance-list.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { GoogleChartsModule } from 'angular-google-charts';
     TimetableComponent,
     LecturersComponent,
     NoticeBoardComponent,
-    ThirdSlideComponent
+    ThirdSlideComponent,
+    AttendanceListComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,7 @@ import { GoogleChartsModule } from 'angular-google-charts';
     GoogleChartsModule
   
   ],
-  providers: [ LecturerServiceService],
+  providers: [ LecturerServiceService,AttendanceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
