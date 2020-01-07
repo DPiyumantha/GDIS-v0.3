@@ -6,6 +6,7 @@ import { LecturersComponent } from './lecturers/lecturers.component';
 import { AttendanceComponent } from './attendance/attendance.component';
 import { TimetableComponent } from './timetable/timetable.component';
 import { TourComponent } from './tour/tour.component';
+import { GoogleChartComponent } from 'angular-google-charts';
 
 
 const routes: Routes = [
