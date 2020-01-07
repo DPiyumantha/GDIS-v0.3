@@ -1,4 +1,6 @@
+import { VideoService } from './../shared/video.service';
 import { Component, OnInit } from '@angular/core';
+import { Video } from '../shared/video';
 
 @Component({
   selector: 'app-tour',
@@ -6,10 +8,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tour.component.css']
 })
 export class TourComponent implements OnInit {
+  list: Video[];
+  k: string;
+  
 
-  constructor() { }
+  constructor( private service: VideoService) { }
 
   ngOnInit() {
+    this.service.getVideos().subscribe(
+      res=>{
+        this.list = res.map(
+          item=>{
+            return{
+            id: item.payload.doc.id,
+            ...item.payload.doc.data()  as Video } 
+        }
+        )
+      }
+    );
   }
 
 }

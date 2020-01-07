@@ -21,7 +21,7 @@ export class LecturersComponent implements OnInit {
       this.lecList = actionArray.map(item=>{
         return {
           id: item.payload.doc.id,
-          ...item.payload.doc.data() } as Lecturer
+          ...item.payload.doc.data()  as Lecturer}
       })
       console.log(this.lecList);
     });

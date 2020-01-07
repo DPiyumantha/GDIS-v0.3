@@ -6,4 +6,5 @@ export class Lecturer{
     emailA: string;
     imgurl: string;
     order : number;
+    resArea: string;
 }

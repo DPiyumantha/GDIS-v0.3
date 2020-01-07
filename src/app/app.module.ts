@@ -1,3 +1,4 @@
+import { WeatherStationService } from './shared/weather-station.service.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -45,7 +46,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore'
     AngularFirestoreModule
   
   ],
-  providers: [ LecturerServiceService],
+  providers: [ LecturerServiceService, WeatherStationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

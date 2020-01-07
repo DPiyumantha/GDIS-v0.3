@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TimetablesService } from '../shared/timetables.service';
 import { Timetable } from '../shared/timetable';
+import { TimetableServiceService } from '../shared/timetable-service.service';
 
 @Component({
   selector: 'app-timetable',
@@ -13,22 +14,21 @@ export class TimetableComponent implements OnInit {
   k: string;
   
 
-  constructor( private service: TimetablesService) { }
+  constructor( private service: TimetableServiceService) { }
 
   ngOnInit() {
-    this.service.getTimeTable().subscribe(
+    this.service.getTimetables().subscribe(
       res=>{
         this.list = res.map(
           item=>{
             return{
             id: item.payload.doc.id,
-            ...item.payload.doc.data()
-          } as Timetable
+            ...item.payload.doc.data()  as Timetable } 
         }
         )
       }
     );
-      this.k = this.list[0].url;
+    // console.log(this.list);
   }
 
 }

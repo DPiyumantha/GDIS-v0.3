@@ -10,4 +10,18 @@
       </span>
     </div>
 </nav>
-<p>tour works!</p>
+
+<div class="container-fluid" style="overflow: auto;">
+    <div *ngFor="let v of list" style="padding-top: 5%;">
+        <video width="30%" controls style="padding: 2%;">
+          <source [src]=  v.vdourl    >
+        Your browser does not support HTML5 video.
+
+        
+          </video>
+        <p> {{ v.title }} </p>
+
+
+
+    </div>
+</div>
