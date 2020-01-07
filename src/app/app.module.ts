@@ -19,7 +19,10 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from 'src/environments/environment';
 import { LecturerServiceService } from './shared/lecturer-service.service';
-import { AngularFirestoreModule } from '@angular/fire/firestore'
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { GoogleChartsModule } from 'angular-google-charts';
+import { AttendanceService } from './shared/attendance.service';
+import { AttendanceListComponent } from './attendance/attendance-list/attendance-list.component';
 
 @NgModule({
   declarations: [
@@ -35,17 +38,20 @@ import { AngularFirestoreModule } from '@angular/fire/firestore'
     TimetableComponent,
     LecturersComponent,
     NoticeBoardComponent,
-    ThirdSlideComponent
+    ThirdSlideComponent,
+    AttendanceListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(environment.firebase2),
     AngularFireDatabaseModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    GoogleChartsModule
   
   ],
-  providers: [ LecturerServiceService],
+  providers: [ LecturerServiceService,AttendanceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
