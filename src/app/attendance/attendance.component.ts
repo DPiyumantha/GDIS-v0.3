@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AttendanceService } from '../shared/attendance.service';
 
 //import { StatsServiceService } from './stats-service.service';
 
@@ -20,22 +21,27 @@ export class AttendanceComponent implements OnInit {
    columnNames = ['Day', 'Attendance'];
    options = {
    };
-   width = 600;
-   height = 150;
+   width = 550;
+   height = 200;
 
    //Daily attendance chart
    title2 = '';
    type2 = 'ColumnChart';
    data2 = [
-     ['Monday', 250,300,100],['Tuesday',300,280,100],['Wednesday',200,180,50],['Thursday',210,140,60],['Friday',100,150,40]
+     ['Monday', 250,300,100],['Tuesday',300,280,200],['Wednesday',200,180,100],['Thursday',210,140,120],['Friday',100,150,60]
   ];
-   columnNames2 = ['1st year', '2nd year', '3rd year'];
-   options2 = {
+   columnNames2 = ['Day','1st year', '2nd year', '3rd year'];
+   options2 = {hAxis: {
+    title: 'Day'
+ },
+ vAxis:{
+    title: 'Attendance'
+ },
    };
-   width2 = 100;
-   height2 = 100;
+   width2 = 700;
+   height2 = 200;
 
-  constructor() { }
+  constructor(private service :AttendanceService) { }
 
   ngOnInit() {
   }
