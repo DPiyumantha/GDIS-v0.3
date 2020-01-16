@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">GDIS v0.3</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+
+        <span class="navbar-text ml-auto text-right" style="align-self: right; float:right; margin: auto">
+        Posters
+      </span>
+    </div>
+</nav>
+
+<div class="container-fluid" style="overflow: auto; background: #ffcc00; height: 100vh;
+overflow: auto; padding-bottom: 10%;">
+    <div *ngFor="let p of list" style="padding-top: 2%; padding-bottom: 2%;">
+        <img src='{{ p.posurl }}' alt="" style="max-height: 100vh;">
+    </div>
+</div>

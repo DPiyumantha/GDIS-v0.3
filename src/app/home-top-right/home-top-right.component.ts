@@ -10,7 +10,7 @@ export class HomeTopRightComponent implements OnInit {
   // temperature:number = 26.5;
   // wind: number= 20.4;
   // sky:string = 'Cloudy';
-  constructor(private weatherService : WeatherStationService) { }
+  constructor(public weatherService : WeatherStationService) { }
 
   ngOnInit() {
    

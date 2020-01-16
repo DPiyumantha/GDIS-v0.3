@@ -6,6 +6,7 @@ import { LecturersComponent } from './lecturers/lecturers.component';
 import { AttendanceComponent } from './attendance/attendance.component';
 import { TimetableComponent } from './timetable/timetable.component';
 import { TourComponent } from './tour/tour.component';
+import { PosterComponent } from './poster/poster.component';
 
 
 const routes: Routes = [
@@ -32,6 +33,10 @@ const routes: Routes = [
       {
         path: "tour",
         component: TourComponent
+      },
+      {
+        path: "posters",
+        component: PosterComponent
       }
     ]
   }

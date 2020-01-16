@@ -1,13 +1,14 @@
 <div class="home-top-right">
     <div class="container" style="margin: 1px; padding: 10%; border: 1px solid white; border-radius: 10px; ">
         <div class="row">
-            <!-- <div class="col weather">
-                <h1>
-                    {{ weatherService.value.temperature }}°C
-                </h1>
-                <h1> {{ weatherService.value.rainfall }}</h1>
-                <h1>Wind at {{ weatherService.value.windspeed }}kmph</h1>
-            </div> -->
+            <div class="col ">
+                <p>
+                    {{ weatherService.values.temperature }}°C
+                </p>
+                <h1> Rainfall {{ weatherService.values.rainfall }}</h1>
+                <h1>Wind at {{ weatherService.values.windspeed }}kmph</h1>
+                <p> Humidity {{ weatherService.values.humidity }}</p>
+            </div>
             <div class="col" style="max-width: 25%;">
                 <img src="../../assets/images/undraw_weather_app_i5sm.png" alt="" style="height: 15vh;">
             </div>

@@ -25,7 +25,9 @@ export class WeatherStationService {
         this.nc = NATS.connect({ url: 'ws://35.247.156.90:4223', json: true });
         this.nc.on('connect', () => {
             console.log("Connected to weather station live server..")
-            this.nc.subscribe("weather.id:" + this.api_key, console.log);
+            this.nc.subscribe("weather.id:" + this.api_key, (incomingMessage)=>{
+                this.values = incomingMessage['data']
+            });
         })
 
 

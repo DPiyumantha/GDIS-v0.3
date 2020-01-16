@@ -20,7 +20,8 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from 'src/environments/environment';
 import { LecturerServiceService } from './shared/lecturer-service.service';
-import { AngularFirestoreModule } from '@angular/fire/firestore'
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { PosterComponent } from './poster/poster.component'
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { AngularFirestoreModule } from '@angular/fire/firestore'
     TimetableComponent,
     LecturersComponent,
     NoticeBoardComponent,
-    ThirdSlideComponent
+    ThirdSlideComponent,
+    PosterComponent
   ],
   imports: [
     BrowserModule,
