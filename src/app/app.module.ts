@@ -21,7 +21,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from 'src/environments/environment';
 import { LecturerServiceService } from './shared/lecturer-service.service';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { PosterComponent } from './poster/poster.component'
+import { PosterComponent } from './poster/poster.component';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { PosterComponent } from './poster/poster.component'
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    AngularFireAuthModule 
   
   ],
   providers: [ LecturerServiceService, WeatherStationService],
